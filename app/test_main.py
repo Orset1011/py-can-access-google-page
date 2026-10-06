@@ -13,4 +13,4 @@ def test_can_access_google_page(
     result = can_access_google_page(url)
     mocked_has_internet_connection.assert_called_once()
     mocked_valid_google_url.assert_called_once_with(url)
-    assert result == "Accessible" or result == "Not accessible"
+    assert result == "Accessible"
